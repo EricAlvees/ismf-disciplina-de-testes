@@ -1,1 +1,54 @@
+Casos de teste:
+
+
+Gerenciar publicações:
+	Agendar publicação
+•	Caso de teste: 
+-Entrada: Seleciona pesquisa Teste123, seleciona publicar (data 20 de junho de 2019), confirmar.
+	-Saída: Sucesso
+	-Retorno: Publicação feita!
+
+•	Caso de teste:
+	- Entrada: Seleciona TesteNaoAprovado, seleciona publicar (data 15 de dezembro de 2018), confirmar.
+	-Saída: Falha
+	-Retorno: Essa publicação não foi aprovada!
+
+•	Caso de teste:
+	- Entrada: Seleciona pesquisa Teste123, seleciona publicar (data 20 de junho de 2015), confirmar.
+	-Saída: Falha
+	-Retorno: Data invalida!
+
+Editar uma publicação já feita:
+•	Caso de teste:
+	- Entrada: Seleciona publicação TestePublicado, Data 20 de janeiro de 2019 publicação, 25 de julho de 2019 remoção, remoção do último parágrafo, confirmar alterações 
+	-Saída: Sucesso
+	-Retorno: Publicação alterada com sucesso
+
+•	Caso de teste:
+	- Entrada: Seleciona publicação TestePublicado, Data 20 de janeiro de 1999 publicação, 25 de julho de 2019 remoção, remoção do último parágrafo, confirmar alterações
+	-Saída: Falha
+	-Retorno: Data invalida!
+
+•	Caso de teste:
+	- Entrada: Seleciona TestePublicado2
+	-Saída: Falha
+	-Retorno: Você não é colaborador dessa publicação.
+
+Convidar pesquisador para pesquisa
+•	Caso de teste:
+	- Entrada: Seleciona Solicitar convite : digita e-mail: guilhermeelias@provedor.com
+	-Saída: Sucesso
+	-Retorno: Convite enviado!
+•	Caso de teste:
+	- Entrada: Seleciona Solicitar convite : digita e-mail: guilhermeelias#provedor.com
+	-Saída: Falha
+	-Retorno: E-mail invalido
+•	Caso de teste:
+	- Entrada: Seleciona Solicitar convite : digita e-mail: guilhermeelias#provedor.com
+	-Saída: Falha
+	-Retorno: E-mail invalido
+•	Caso de teste:
+	- Entrada: Seleciona Solicitar convite : digita e-mail: naocadastrado@provedor.com
+	-Saída: Sucesso
+	-Retorno: Enviado convite para fazer parte do sistema!
 

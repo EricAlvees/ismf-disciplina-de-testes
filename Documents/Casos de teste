@@ -51,4 +51,81 @@ Convidar pesquisador para pesquisa
 	- Entrada: Seleciona Solicitar convite : digita e-mail: naocadastrado@provedor.com
 	-Saída: Sucesso
 	-Retorno: Enviado convite para fazer parte do sistema!
+	
+	Aprovar categoria
+•	Caso de teste:
+	- Entrada: Seleciona categoria: CategoriaFinalizada para aprovar, confirma
+	-Saída: Sucesso
+	-Retorno: Categoria aprovada!
+•	Caso de teste: 
+	- Entrada: CategoriaFinalizada2 para aprovar, confirma
+	-Saída: Falha
+	-Retorno: Você não é o dono dessa categoria
+
+•	Caso de teste: 
+	- Entrada: CategoriaVazia para aprovar, confirma. 
+	-Saída: Falha
+	-Retorno: A categoria não possui nenhum conteúdo.
+
+Revogar categoria
+•	Caso de teste:
+	- Entrada: Seleciona categoria: CategoriaFinalizada para revogar, confirma
+	-Saída: Sucesso
+	-Retorno: Categoria revogada!
+•	Caso de teste: 
+	- Entrada: CategoriaFinalizada2 para revogar, confirma
+	-Saída: Falha
+	-Retorno: Você não é o dono dessa categoria
+
+•	Caso de teste: 
+	- Entrada: CategoriaVazia para revogar, confirma. 
+	-Saída: Falha
+	-Retorno: A categoria não possui nenhum conteúdo.
+
+Desassociar de pesquisa
+•	Caso de teste:
+	- Entrada: Seleciona pesquisa teste123, desassociar de pesquisa, confirmar.
+	-Saída: Sucesso
+	-Retorno: Você não faz mais parte dessa pesquisa
+•	Caso de teste: 
+	- Entrada: Seleciona pesquisa testesemresponsavel, desassociar de pesquisa, confirmar(mensagem dizendo que pesquisa irá ser deltada).
+	-Saída: Sucesso
+	-Retorno: Pesquisa deletada com sucesso!
+
+Criar novo questionário 
+•	Caso de teste: 
+	- Entrada: Criar novo questionário, inserir informações.
+	-Saída: Sucesso
+	-Retorno: Questionário criado com sucesso.
+
+•	Caso de teste: 
+	- Entrada: Criar novo questionário
+	-Saída: Falha
+	-Retorno: Você não tem permissão para criar questionários 
+
+Editar questionário 
+•	Caso de teste: 
+	- Entrada: Selecionar questionário QuestTeste, editar, fazer edição no ultimo parágrafo, salvar e confirmar. 
+	-Saída: Sucesso
+	-Retorno: Questionário editado com sucesso 
+
+•	Caso de teste: 
+	- Entrada: Criar novo questionário
+	-Saída: Falha
+	-Retorno: Você não tem permissão para criar questionários
+
+Convidar funcionário para empresa:
+•	Caso de teste: 
+	- Entrada: Insere e-mail: guilhermeelias@provedor.com no campo do convite, confirma 
+	-Saída: Sucesso
+	-Retorno:  Convite enviado 
+
+•	Caso de teste: 
+	- Entrada: Insere e-mail: guilhermeelias@outroprovedor.com no campo do convite, confirma 
+	-Saída: Falha
+	-Retorno:  E-mail invalido 
+•	Caso de teste: 
+	- Entrada: Insere e-mail: guilhermeelias!##.com no campo do convite, confirma 
+	-Saída: Falha
+	-Retorno:  E-mail invalido 
 
